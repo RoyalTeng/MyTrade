@@ -1,0 +1,27 @@
+{
+  "api_info": {
+    "name": "Tushare",
+    "website": "https://tushare.pro",
+    "description": "专业金融数据接口，提供股票、基金、期货等多种金融数据"
+  },
+  "token_setup": {
+    "method1": "环境变量设置",
+    "command1": "set TUSHARE_TOKEN=你的token  (Windows)",
+    "command2": "export TUSHARE_TOKEN=你的token  (Linux/Mac)",
+    "method2": "代码中设置",
+    "code": "TushareDataSource(token='你的token')"
+  },
+  "data_types": {
+    "basic": "股票基本信息",
+    "daily": "日线行情",
+    "realtime": "实时行情",
+    "financial": "财务数据",
+    "index": "指数数据",
+    "industry": "行业分类"
+  },
+  "usage_limits": {
+    "免费用户": "每分钟200次",
+    "VIP用户": "每分钟400次",
+    "专业版": "每分钟800次"
+  }
+}

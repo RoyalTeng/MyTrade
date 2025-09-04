@@ -1,0 +1,44 @@
+# MyTrade 量化交易系统配置文件
+
+# 数据源配置
+data:
+  source: "akshare"  # tushare, akshare
+  cache_dir: "./data/cache"
+  update_interval: "daily"
+  tushare_token: "${TUSHARE_TOKEN}"  # 从环境变量读取
+  
+# TradingAgents配置
+trading_agents:
+  model_fast: "gpt-3.5-turbo"
+  model_deep: "gpt-4"
+  use_online_data: false
+  debate_rounds: 2
+  openai_api_key: "${OPENAI_API_KEY}"  # 从环境变量读取
+  
+# 回测配置
+backtest:
+  initial_cash: 1000000
+  commission: 0.001
+  slippage: 0.0005
+  
+# 日志配置
+logs:
+  path: "./logs"
+  keep_days: 30
+  level: "INFO"
+  enable_explain_logs: true
+  
+# 专家对话模块配置
+expert_dialogue:
+  mode: "CLI"  # CLI, API
+  use_local_llm: false
+  llm_model: "gpt-3.5-turbo"
+  max_response_length: 500
+
+# 系统配置
+system:
+  timezone: "Asia/Shanghai"
+  market_hours:
+    start: "09:30"
+    end: "15:00"
+  trading_days_only: true

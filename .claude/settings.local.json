@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(conda create:*)",
+      "Read(f:\\myTrade\\doc/**)",
+      "Bash(chmod:*)",
+      "Bash(python run_tests.py:*)",
+      "Bash(find:*)",
+      "Bash(pip install:*)",
+      "Bash(python test/test_integration_minimal.py)",
+      "Bash(python test/test_simple_integration.py)",
+      "Bash(python test:*)",
+      "Bash(python:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Read(\\/**)",
+      "Bash(set TUSHARE_TOKEN=2e6561572caa8a088167963e5c9fb5b5b5dbacc83ac714e9596bdc47)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,782 @@
+{
+  "config": {
+    "start_date": "2025-08-04",
+    "end_date": "2025-09-03",
+    "initial_cash": 100000.0,
+    "commission_rate": 0.001,
+    "slippage_rate": 0.0005,
+    "symbols": [
+      "600519",
+      "000001",
+      "000002"
+    ],
+    "max_positions": 3,
+    "position_size_pct": 0.3,
+    "rebalance_frequency": "daily"
+  },
+  "portfolio_summary": {
+    "initial_cash": 100000.0,
+    "current_cash": 100000.0,
+    "market_value": 0,
+    "total_value": 100000.0,
+    "total_return": 0.0,
+    "total_return_pct": 0.0,
+    "realized_pnl": 0.0,
+    "unrealized_pnl": 0,
+    "num_positions": 0,
+    "num_trades": 0
+  },
+  "performance_metrics": {
+    "total_return": 0.0,
+    "annual_return": 0.0,
+    "volatility": 0.0,
+    "sharpe_ratio": 0.0,
+    "max_drawdown": 0.0,
+    "win_rate": 0.0,
+    "trading_days": 23.0
+  },
+  "trade_history": [],
+  "daily_values": [
+    {
+      "timestamp": "2025-08-04",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-05",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-06",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-07",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-08",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-11",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-12",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-13",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-14",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-15",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-18",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-19",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-20",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-21",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-22",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-25",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-26",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-27",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-28",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-29",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-09-01",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-09-02",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-09-03",
+      "cash": 100000.0,
+      "market_value": 0.0,
+      "total_value": 100000.0,
+      "total_return": 0.0,
+      "positions": {}
+    }
+  ],
+  "signal_history": [
+    {
+      "date": "2025-08-04",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-04",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-04",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-05",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-05",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-05",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-06",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-06",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-06",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-07",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-07",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-07",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-08",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-08",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-08",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-11",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-11",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-11",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-12",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-12",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-12",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-13",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-13",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-13",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-14",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-14",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-14",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-15",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-15",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-15",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-18",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-18",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-18",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-19",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-19",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-19",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-20",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-20",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-20",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-21",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-21",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-21",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-22",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-22",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-22",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-25",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-25",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-25",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-26",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-26",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-26",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-27",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-27",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-27",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-28",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-28",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-28",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-29",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-29",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-08-29",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-09-01",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-09-01",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-09-01",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-09-02",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-09-02",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-09-02",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-09-03",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-09-03",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    },
+    {
+      "date": "2025-09-03",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.0,
+      "reason": "Signal generation failed: TradingAgents analysis failed: RiskManager.assess_risk() got an unexpected keyword argument 'target_date'"
+    }
+  ],
+  "start_time": "2025-09-03T07:56:02.264117",
+  "end_time": "2025-09-03T07:56:02.850388",
+  "duration_seconds": 0.586271
+}

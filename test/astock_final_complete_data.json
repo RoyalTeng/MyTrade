@@ -1,0 +1,359 @@
+{
+  "analysis_time": "2025-09-04T08:12:21.223711",
+  "data_sources": [
+    "akshare",
+    "新浪财经API",
+    "东方财富API"
+  ],
+  "data_quality": 1.0,
+  "indices_data": {
+    "000001": {
+      "name": "上证综指",
+      "code": "000001",
+      "close": 3813.56,
+      "change": -44.57,
+      "change_pct": -1.16,
+      "open": 3865.29,
+      "high": 3868.39,
+      "low": 3794.88
+    },
+    "399001": {
+      "name": "深证成指",
+      "code": "399001",
+      "close": 12472.0,
+      "change": -81.84,
+      "change_pct": -0.65,
+      "open": 12599.59,
+      "high": 12669.8,
+      "low": 12393.09
+    },
+    "399006": {
+      "name": "创业板指",
+      "code": "399006",
+      "close": 2899.37,
+      "change": 27.15,
+      "change_pct": 0.95,
+      "open": 2882.84,
+      "high": 2926.78,
+      "low": 2859.51
+    }
+  },
+  "stock_data": {
+    "symbol": "000001",
+    "name": "平安银行",
+    "current_price": 11.75,
+    "change": -0.23,
+    "change_pct": -1.92,
+    "open": 11.98,
+    "high": 12.01,
+    "low": 11.74,
+    "volume": 1367232,
+    "turnover": 1619322977.46,
+    "market_cap": 228019538827.0,
+    "pe_ratio": 4.58,
+    "pb_ratio": 0.52,
+    "technical_indicators": {
+      "ma5": 11.95,
+      "ma10": 12.083,
+      "ma20": 12.154,
+      "volatility": 0.18440173534975193,
+      "highest_20d": 12.47,
+      "lowest_20d": 11.75
+    }
+  },
+  "sentiment_data": {
+    "market_structure": {
+      "total_stocks": 5743,
+      "up_count": 823,
+      "down_count": 4560,
+      "flat_count": 360,
+      "limit_up_count": 53,
+      "limit_down_count": 51,
+      "big_up_count": 128,
+      "big_down_count": 375,
+      "up_ratio": 0.1433048929131116,
+      "sentiment_score": 14.33048929131116
+    }
+  },
+  "sectors_data": {
+    "贵金属": {
+      "change_pct": 1.15,
+      "up_count": 7,
+      "down_count": 4,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "西部黄金",
+      "leading_change": 1.15
+    },
+    "光伏设备": {
+      "change_pct": 1.12,
+      "up_count": 39,
+      "down_count": 40,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "通润装备",
+      "leading_change": 1.12
+    },
+    "游戏": {
+      "change_pct": 0.88,
+      "up_count": 12,
+      "down_count": 13,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "文投控股",
+      "leading_change": 0.88
+    },
+    "电池": {
+      "change_pct": -0.03,
+      "up_count": 35,
+      "down_count": 39,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "亿纬锂能",
+      "leading_change": -0.03
+    },
+    "医疗服务": {
+      "change_pct": -0.15,
+      "up_count": 11,
+      "down_count": 31,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "百花医药",
+      "leading_change": -0.15
+    },
+    "电子化学品": {
+      "change_pct": -0.24,
+      "up_count": 8,
+      "down_count": 19,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "晶瑞电材",
+      "leading_change": -0.24
+    },
+    "生物制品": {
+      "change_pct": -0.42,
+      "up_count": 22,
+      "down_count": 52,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "百利天恒",
+      "leading_change": -0.42
+    },
+    "化学制药": {
+      "change_pct": -0.51,
+      "up_count": 43,
+      "down_count": 102,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "辰欣药业",
+      "leading_change": -0.51
+    },
+    "风电设备": {
+      "change_pct": -0.54,
+      "up_count": 10,
+      "down_count": 20,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "大金重工",
+      "leading_change": -0.54
+    },
+    "非金属材料": {
+      "change_pct": -0.67,
+      "up_count": 8,
+      "down_count": 26,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "宁新新材",
+      "leading_change": -0.67
+    },
+    "半导体": {
+      "change_pct": -0.85,
+      "up_count": 44,
+      "down_count": 118,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "成都华微",
+      "leading_change": -0.85
+    },
+    "旅游酒店": {
+      "change_pct": -0.88,
+      "up_count": 9,
+      "down_count": 28,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "长白山",
+      "leading_change": -0.88
+    },
+    "电源设备": {
+      "change_pct": -0.9,
+      "up_count": 8,
+      "down_count": 24,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "海博思创",
+      "leading_change": -0.9
+    },
+    "医疗器械": {
+      "change_pct": -0.95,
+      "up_count": 19,
+      "down_count": 104,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "赛诺医疗",
+      "leading_change": -0.95
+    },
+    "教育": {
+      "change_pct": -0.98,
+      "up_count": 4,
+      "down_count": 11,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "凯文教育",
+      "leading_change": -0.98
+    },
+    "银行": {
+      "change_pct": -1.31,
+      "up_count": 3,
+      "down_count": 38,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "青岛银行",
+      "leading_change": -1.31
+    },
+    "汽车整车": {
+      "change_pct": -1.36,
+      "up_count": 5,
+      "down_count": 20,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "海马汽车",
+      "leading_change": -1.36
+    },
+    "房地产开发": {
+      "change_pct": -1.39,
+      "up_count": 10,
+      "down_count": 76,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "首开股份",
+      "leading_change": -1.39
+    },
+    "工程机械": {
+      "change_pct": -1.4,
+      "up_count": 6,
+      "down_count": 26,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "华电科工",
+      "leading_change": -1.4
+    },
+    "医药商业": {
+      "change_pct": -1.58,
+      "up_count": 3,
+      "down_count": 28,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "百洋医药",
+      "leading_change": -1.58
+    },
+    "消费电子": {
+      "change_pct": -1.75,
+      "up_count": 17,
+      "down_count": 86,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "思泉新材",
+      "leading_change": -1.75
+    },
+    "光学光电子": {
+      "change_pct": -1.93,
+      "up_count": 14,
+      "down_count": 85,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "苏大维格",
+      "leading_change": -1.93
+    },
+    "房地产服务": {
+      "change_pct": -1.95,
+      "up_count": 2,
+      "down_count": 16,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "电子城",
+      "leading_change": -1.95
+    },
+    "汽车服务": {
+      "change_pct": -2.01,
+      "up_count": 2,
+      "down_count": 11,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "上海物贸",
+      "leading_change": -2.01
+    },
+    "电子元件": {
+      "change_pct": -2.12,
+      "up_count": 25,
+      "down_count": 123,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "生益电子",
+      "leading_change": -2.12
+    },
+    "保险": {
+      "change_pct": -2.49,
+      "up_count": 0,
+      "down_count": 5,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "*ST天茂",
+      "leading_change": -2.49
+    },
+    "有色金属": {
+      "change_pct": -2.53,
+      "up_count": 4,
+      "down_count": 72,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "江西铜业",
+      "leading_change": -2.53
+    },
+    "汽车零部件": {
+      "change_pct": -2.6,
+      "up_count": 32,
+      "down_count": 196,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "春兴精工",
+      "leading_change": -2.6
+    },
+    "食品饮料": {
+      "change_pct": -2.71,
+      "up_count": 4,
+      "down_count": 115,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "均瑶健康",
+      "leading_change": -2.71
+    },
+    "计算机设备": {
+      "change_pct": -3.0,
+      "up_count": 4,
+      "down_count": 46,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "安联锐视",
+      "leading_change": -3.0
+    },
+    "证券": {
+      "change_pct": -3.63,
+      "up_count": 0,
+      "down_count": 49,
+      "total_count": 0,
+      "turnover": 0.0,
+      "leading_stock": "长城证券",
+      "leading_change": -3.63
+    }
+  }
+}
