@@ -35,7 +35,18 @@
       "Bash(\"D:\\Users\\Administrator\\miniconda3\\envs\\myTrade\\python.exe\" main.py demo --help)",
       "Bash(\"D:\\Users\\Administrator\\miniconda3\\envs\\myTrade\\python.exe\" main.py demo --symbol 000001)",
       "Bash(\"D:\\Users\\Administrator\\miniconda3\\envs\\myTrade\\python.exe\" test/test_data_schemas.py)",
-      "Bash(\"D:\\Users\\Administrator\\miniconda3\\envs\\myTrade\\python.exe\" test/test_temporal_guard.py)"
+      "Bash(\"D:\\Users\\Administrator\\miniconda3\\envs\\myTrade\\python.exe\" test/test_temporal_guard.py)",
+      "Read(/F:\\myTrade/**)",
+      "Read(/F:\\myTrade\\src\\mytrade\\agents/**)",
+      "Bash(\"D:\\Users\\Administrator\\miniconda3\\envs\\myTrade\\python.exe\" test/test_orchestrator_pipeline.py)",
+      "Read(/F:\\myTrade\\src\\mytrade\\agents/**)",
+      "Read(/F:\\myTrade\\src\\mytrade\\agents/**)",
+      "Read(/F:\\myTrade\\src\\mytrade\\logging/**)",
+      "Read(/F:\\myTrade\\src\\mytrade\\agents/**)",
+      "Bash(\"D:\\Users\\Administrator\\miniconda3\\envs\\myTrade\\python.exe\" test/test_structured_logger.py)",
+      "Bash(\"D:\\Users\\Administrator\\miniconda3\\envs\\myTrade\\python.exe\" test/test_structured_logger_simple.py)",
+      "Bash(\"D:\\Users\\Administrator\\miniconda3\\envs\\myTrade\\python.exe\" test/test_logging_integration.py)",
+      "Read(/F:\\myTrade\\src\\mytrade\\agents/**)"
     ],
     "deny": [],
     "ask": []

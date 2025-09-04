@@ -69,6 +69,9 @@ class AgentRegistry:
         self._configs: Dict[AgentRole, AgentConfig] = {}
         self._instances: Dict[AgentRole, AgentInterface] = {}
         
+        # 辩论配置
+        self.debate_config = DebateConfig()
+        
     def register_agent(
         self, 
         role: AgentRole, 
@@ -115,6 +118,12 @@ class AgentRegistry:
             role for role, config in self._configs.items() 
             if config.enabled
         ]
+    
+    def is_agent_enabled(self, role: AgentRole) -> bool:
+        """检查Agent是否启用"""
+        if role not in self._configs:
+            return False
+        return self._configs[role].enabled
     
     def load_config(self, config_path: str):
         """从配置文件加载Agent配置"""
