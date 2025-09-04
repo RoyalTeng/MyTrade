@@ -1,0 +1,1278 @@
+{
+  "config": {
+    "start_date": "2025-08-05",
+    "end_date": "2025-09-04",
+    "initial_cash": 100000.0,
+    "commission_rate": 0.001,
+    "slippage_rate": 0.0005,
+    "symbols": [
+      "600519",
+      "000001",
+      "000002"
+    ],
+    "max_positions": 3,
+    "position_size_pct": 0.3,
+    "rebalance_frequency": "daily"
+  },
+  "portfolio_summary": {
+    "initial_cash": 100000.0,
+    "current_cash": 16382.540565729556,
+    "market_value": 86977.72635974013,
+    "total_value": 103360.26692546968,
+    "total_return": 0.033602669254696814,
+    "total_return_pct": 3.3602669254696815,
+    "realized_pnl": -337200.1448291447,
+    "unrealized_pnl": -3546.774206320102,
+    "num_positions": 2,
+    "num_trades": 35
+  },
+  "performance_metrics": {
+    "total_return": 0.033602669254696814,
+    "annual_return": 0.4363681739177765,
+    "volatility": 0.5258267261979807,
+    "sharpe_ratio": 0.7728176482318503,
+    "max_drawdown": -0.09119856145806564,
+    "win_rate": 0.391304347826087,
+    "trading_days": 23.0
+  },
+  "trade_history": [
+    {
+      "timestamp": "2025-08-05",
+      "symbol": "000001",
+      "action": "BUY",
+      "shares": 1900,
+      "price": 15.08898883238703,
+      "commission": 28.669078781535354,
+      "total_amount": 28697.74786031689,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "timestamp": "2025-08-05",
+      "symbol": "600519",
+      "action": "BUY",
+      "shares": 1000,
+      "price": 19.870995048115937,
+      "commission": 19.870995048115937,
+      "total_amount": 19890.866043164053,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "timestamp": "2025-08-06",
+      "symbol": "000002",
+      "action": "BUY",
+      "shares": 1000,
+      "price": 14.75526625317785,
+      "commission": 14.75526625317785,
+      "total_amount": 14770.021519431028,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "timestamp": "2025-08-07",
+      "symbol": "000002",
+      "action": "SELL",
+      "shares": 1000,
+      "price": 15.959948208040924,
+      "commission": 15.959948208040924,
+      "total_amount": -15943.988259832882,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "timestamp": "2025-08-08",
+      "symbol": "600519",
+      "action": "SELL",
+      "shares": 1000,
+      "price": 18.371498712799976,
+      "commission": 18.371498712799976,
+      "total_amount": -18353.127214087177,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "timestamp": "2025-08-08",
+      "symbol": "000001",
+      "action": "SELL",
+      "shares": 1900,
+      "price": 14.362544401253155,
+      "commission": 27.288834362380996,
+      "total_amount": -27261.545528018614,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "timestamp": "2025-08-13",
+      "symbol": "000001",
+      "action": "BUY",
+      "shares": 2000,
+      "price": 14.34285620602235,
+      "commission": 28.6857124120447,
+      "total_amount": 28714.398124456744,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "timestamp": "2025-08-13",
+      "symbol": "600519",
+      "action": "BUY",
+      "shares": 1100,
+      "price": 18.07852547526858,
+      "commission": 19.886378022795437,
+      "total_amount": 19906.264400818232,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "timestamp": "2025-08-13",
+      "symbol": "000002",
+      "action": "BUY",
+      "shares": 1000,
+      "price": 13.60031783157009,
+      "commission": 13.60031783157009,
+      "total_amount": 13613.91814940166,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "timestamp": "2025-08-14",
+      "symbol": "600519",
+      "action": "SELL",
+      "shares": 1100,
+      "price": 18.64041563654542,
+      "commission": 20.504457200199962,
+      "total_amount": -20483.95274299976,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "timestamp": "2025-08-14",
+      "symbol": "000002",
+      "action": "SELL",
+      "shares": 1000,
+      "price": 14.347555176829601,
+      "commission": 14.347555176829601,
+      "total_amount": -14333.207621652771,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "timestamp": "2025-08-15",
+      "symbol": "000001",
+      "action": "SELL",
+      "shares": 2000,
+      "price": 13.71870340931594,
+      "commission": 27.43740681863188,
+      "total_amount": -27409.969411813247,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "timestamp": "2025-08-18",
+      "symbol": "600519",
+      "action": "BUY",
+      "shares": 1300,
+      "price": 21.618991337480036,
+      "commission": 28.104688738724047,
+      "total_amount": 28132.79342746277,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "timestamp": "2025-08-19",
+      "symbol": "600519",
+      "action": "BUY",
+      "shares": 1000,
+      "price": 19.916730999735105,
+      "commission": 19.916730999735105,
+      "total_amount": 19936.64773073484,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "timestamp": "2025-08-19",
+      "symbol": "000001",
+      "action": "BUY",
+      "shares": 900,
+      "price": 15.460461430394599,
+      "commission": 13.914415287355139,
+      "total_amount": 13928.329702642495,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "timestamp": "2025-08-20",
+      "symbol": "600519",
+      "action": "SELL",
+      "shares": 2300,
+      "price": 21.753868030636603,
+      "commission": 50.033896470464185,
+      "total_amount": -49983.86257399372,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "timestamp": "2025-08-20",
+      "symbol": "000001",
+      "action": "SELL",
+      "shares": 900,
+      "price": 14.007574783819205,
+      "commission": 12.606817305437284,
+      "total_amount": -12594.210488131846,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "timestamp": "2025-08-21",
+      "symbol": "000001",
+      "action": "BUY",
+      "shares": 1900,
+      "price": 15.137019496382047,
+      "commission": 28.76033704312589,
+      "total_amount": 28789.097380169012,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "timestamp": "2025-08-22",
+      "symbol": "000001",
+      "action": "SELL",
+      "shares": 1900,
+      "price": 14.28910937289049,
+      "commission": 27.149307808491933,
+      "total_amount": -27122.15850068344,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "timestamp": "2025-08-22",
+      "symbol": "000002",
+      "action": "BUY",
+      "shares": 2100,
+      "price": 13.558780691649499,
+      "commission": 28.473439452463946,
+      "total_amount": 28501.91289191641,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "timestamp": "2025-08-22",
+      "symbol": "600519",
+      "action": "BUY",
+      "shares": 900,
+      "price": 21.083716956184073,
+      "commission": 18.975345260565668,
+      "total_amount": 18994.320605826233,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "timestamp": "2025-08-25",
+      "symbol": "600519",
+      "action": "SELL",
+      "shares": 900,
+      "price": 18.597558182497487,
+      "commission": 16.737802364247738,
+      "total_amount": -16721.06456188349,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "timestamp": "2025-08-25",
+      "symbol": "000002",
+      "action": "SELL",
+      "shares": 2100,
+      "price": 16.145051530229903,
+      "commission": 33.904608213482796,
+      "total_amount": -33870.703605269315,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "timestamp": "2025-08-27",
+      "symbol": "000001",
+      "action": "BUY",
+      "shares": 2100,
+      "price": 13.70639528816517,
+      "commission": 28.78343010514686,
+      "total_amount": 28812.213535252005,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "timestamp": "2025-08-28",
+      "symbol": "000001",
+      "action": "SELL",
+      "shares": 2100,
+      "price": 15.999363318492303,
+      "commission": 33.598662968833835,
+      "total_amount": -33565.064305865,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "timestamp": "2025-08-29",
+      "symbol": "600519",
+      "action": "BUY",
+      "shares": 1600,
+      "price": 19.33534787527723,
+      "commission": 30.93655660044357,
+      "total_amount": 30967.493157044013,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "timestamp": "2025-08-29",
+      "symbol": "000001",
+      "action": "BUY",
+      "shares": 1600,
+      "price": 13.838959506547784,
+      "commission": 22.142335210476457,
+      "total_amount": 22164.477545686932,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "timestamp": "2025-09-01",
+      "symbol": "000001",
+      "action": "SELL",
+      "shares": 1600,
+      "price": 14.826413155669734,
+      "commission": 23.722261049071573,
+      "total_amount": -23698.538788022503,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "timestamp": "2025-09-01",
+      "symbol": "600519",
+      "action": "BUY",
+      "shares": 1100,
+      "price": 19.44814132063993,
+      "commission": 21.392955452703923,
+      "total_amount": 21414.348408156624,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "timestamp": "2025-09-02",
+      "symbol": "000001",
+      "action": "BUY",
+      "shares": 1100,
+      "price": 13.94021458496919,
+      "commission": 15.33423604346611,
+      "total_amount": 15349.570279509575,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "timestamp": "2025-09-02",
+      "symbol": "600519",
+      "action": "BUY",
+      "shares": 500,
+      "price": 21.178665068622575,
+      "commission": 10.589332534311287,
+      "total_amount": 10599.921866845598,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "timestamp": "2025-09-03",
+      "symbol": "000001",
+      "action": "SELL",
+      "shares": 1100,
+      "price": 14.431478047948804,
+      "commission": 15.874625852743684,
+      "total_amount": -15858.75122689094,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "timestamp": "2025-09-03",
+      "symbol": "600519",
+      "action": "BUY",
+      "shares": 600,
+      "price": 19.3719901417804,
+      "commission": 11.62319408506824,
+      "total_amount": 11634.817279153309,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "timestamp": "2025-09-04",
+      "symbol": "000001",
+      "action": "BUY",
+      "shares": 600,
+      "price": 15.746865154721528,
+      "commission": 9.448119092832917,
+      "total_amount": 9457.567211925749,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "timestamp": "2025-09-04",
+      "symbol": "600519",
+      "action": "BUY",
+      "shares": 300,
+      "price": 21.78114266900102,
+      "commission": 6.534342800700306,
+      "total_amount": 6540.877143501006,
+      "reason": "整体偏多，建议小幅加仓"
+    }
+  ],
+  "daily_values": [
+    {
+      "timestamp": "2025-08-05",
+      "cash": 51411.38609651906,
+      "market_value": 51895.08838231131,
+      "total_value": 103306.47447883038,
+      "total_return": 0.0330647447883038,
+      "positions": {
+        "000001": {
+          "shares": 1900,
+          "market_value": 30607.541464020585,
+          "unrealized_pnl": 1938.4626824852312
+        },
+        "600519": {
+          "shares": 1000,
+          "market_value": 21287.54691829073,
+          "unrealized_pnl": 1416.5518701747933
+        }
+      }
+    },
+    {
+      "timestamp": "2025-08-06",
+      "cash": 36641.36457708803,
+      "market_value": 65727.7147490855,
+      "total_value": 102369.07932617352,
+      "total_return": 0.023690793261735236,
+      "positions": {
+        "000001": {
+          "shares": 1900,
+          "market_value": 30396.200199588617,
+          "unrealized_pnl": 1727.1214180532625
+        },
+        "600519": {
+          "shares": 1000,
+          "market_value": 19485.455568721678,
+          "unrealized_pnl": -385.5394793942578
+        },
+        "000002": {
+          "shares": 1000,
+          "market_value": 15846.058980775208,
+          "unrealized_pnl": 1090.792727597358
+        }
+      }
+    },
+    {
+      "timestamp": "2025-08-07",
+      "cash": 52585.352836920916,
+      "market_value": 45533.0762202429,
+      "total_value": 98118.42905716383,
+      "total_return": -0.018815709428361735,
+      "positions": {
+        "000001": {
+          "shares": 1900,
+          "market_value": 25659.189834034154,
+          "unrealized_pnl": -3009.8889475012
+        },
+        "600519": {
+          "shares": 1000,
+          "market_value": 19873.88638620875,
+          "unrealized_pnl": 2.8913380928133847
+        }
+      }
+    },
+    {
+      "timestamp": "2025-08-08",
+      "cash": 98200.02557902671,
+      "market_value": 0.0,
+      "total_value": 98200.02557902671,
+      "total_return": -0.01799974420973289,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-11",
+      "cash": 98200.02557902671,
+      "market_value": 0.0,
+      "total_value": 98200.02557902671,
+      "total_return": -0.01799974420973289,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-12",
+      "cash": 98200.02557902671,
+      "market_value": 0.0,
+      "total_value": 98200.02557902671,
+      "total_return": -0.01799974420973289,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-13",
+      "cash": 35965.44490435008,
+      "market_value": 68268.45900272761,
+      "total_value": 104233.90390707769,
+      "total_return": 0.04233903907077693,
+      "positions": {
+        "000001": {
+          "shares": 2000,
+          "market_value": 28510.536567697596,
+          "unrealized_pnl": -175.17584434710443
+        },
+        "600519": {
+          "shares": 1100,
+          "market_value": 23946.360974146588,
+          "unrealized_pnl": 4059.9829513511504
+        },
+        "000002": {
+          "shares": 1000,
+          "market_value": 15811.561460883433,
+          "unrealized_pnl": 2211.2436293133433
+        }
+      }
+    },
+    {
+      "timestamp": "2025-08-14",
+      "cash": 70782.60526900261,
+      "market_value": 29485.816761689024,
+      "total_value": 100268.42203069164,
+      "total_return": 0.0026842203069163953,
+      "positions": {
+        "000001": {
+          "shares": 2000,
+          "market_value": 29485.816761689024,
+          "unrealized_pnl": 800.1043496443235
+        }
+      }
+    },
+    {
+      "timestamp": "2025-08-15",
+      "cash": 98192.57468081586,
+      "market_value": 0.0,
+      "total_value": 98192.57468081586,
+      "total_return": -0.018074253191841416,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-18",
+      "cash": 70059.78125335308,
+      "market_value": 27567.849146478868,
+      "total_value": 97627.63039983195,
+      "total_return": -0.02372369600168051,
+      "positions": {
+        "600519": {
+          "shares": 1300,
+          "market_value": 27567.849146478868,
+          "unrealized_pnl": -536.8395922451782
+        }
+      }
+    },
+    {
+      "timestamp": "2025-08-19",
+      "cash": 36194.80381997574,
+      "market_value": 59324.88043524297,
+      "total_value": 95519.68425521872,
+      "total_return": -0.044803157447812846,
+      "positions": {
+        "000001": {
+          "shares": 900,
+          "market_value": 13150.537680062924,
+          "unrealized_pnl": -763.8776072922155
+        },
+        "600519": {
+          "shares": 2300,
+          "market_value": 46174.34275518005,
+          "unrealized_pnl": -1847.0769832791048
+        }
+      }
+    },
+    {
+      "timestamp": "2025-08-20",
+      "cash": 98772.87688210132,
+      "market_value": 0.0,
+      "total_value": 98772.87688210132,
+      "total_return": -0.012271231178986782,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-21",
+      "cash": 69983.77950193231,
+      "market_value": 26125.197242121445,
+      "total_value": 96108.97674405375,
+      "total_return": -0.03891023255946246,
+      "positions": {
+        "000001": {
+          "shares": 1900,
+          "market_value": 26125.197242121445,
+          "unrealized_pnl": -2635.139801004443
+        }
+      }
+    },
+    {
+      "timestamp": "2025-08-22",
+      "cash": 49609.70450487311,
+      "market_value": 45118.21731072085,
+      "total_value": 94727.92181559396,
+      "total_return": -0.0527207818440604,
+      "positions": {
+        "600519": {
+          "shares": 900,
+          "market_value": 16488.088661584756,
+          "unrealized_pnl": -2487.256598980912
+        },
+        "000002": {
+          "shares": 2100,
+          "market_value": 28630.12864913609,
+          "unrealized_pnl": 156.68919667214504
+        }
+      }
+    },
+    {
+      "timestamp": "2025-08-25",
+      "cash": 100201.4726720259,
+      "market_value": 0.0,
+      "total_value": 100201.4726720259,
+      "total_return": 0.002014726720259059,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-26",
+      "cash": 100201.4726720259,
+      "market_value": 0.0,
+      "total_value": 100201.4726720259,
+      "total_return": 0.002014726720259059,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-27",
+      "cash": 71389.25913677391,
+      "market_value": 28946.405700466643,
+      "total_value": 100335.66483724055,
+      "total_return": 0.0033566483724054704,
+      "positions": {
+        "000001": {
+          "shares": 2100,
+          "market_value": 28946.405700466643,
+          "unrealized_pnl": 162.9755953197855
+        }
+      }
+    },
+    {
+      "timestamp": "2025-08-28",
+      "cash": 104954.32344263891,
+      "market_value": 0.0,
+      "total_value": 104954.32344263891,
+      "total_return": 0.049543234426389096,
+      "positions": {}
+    },
+    {
+      "timestamp": "2025-08-29",
+      "cash": 51822.35273990797,
+      "market_value": 54675.26400740747,
+      "total_value": 106497.61674731545,
+      "total_return": 0.06497616747315449,
+      "positions": {
+        "000001": {
+          "shares": 1600,
+          "market_value": 22307.58131735907,
+          "unrealized_pnl": 165.24610688261237
+        },
+        "600519": {
+          "shares": 1600,
+          "market_value": 32367.6826900484,
+          "unrealized_pnl": 1431.1260896048334
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-01",
+      "cash": 54106.54311977385,
+      "market_value": 53862.07754492596,
+      "total_value": 107968.62066469982,
+      "total_return": 0.07968620664699819,
+      "positions": {
+        "600519": {
+          "shares": 2700,
+          "market_value": 53862.07754492596,
+          "unrealized_pnl": 1532.5654917784705
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-02",
+      "cash": 28157.05097341868,
+      "market_value": 74739.87824641989,
+      "total_value": 102896.92921983857,
+      "total_return": 0.028969292198385666,
+      "positions": {
+        "000001": {
+          "shares": 1100,
+          "market_value": 16444.951065299378,
+          "unrealized_pnl": 1110.715021833268
+        },
+        "600519": {
+          "shares": 3200,
+          "market_value": 58294.92718112051,
+          "unrealized_pnl": -4623.91740633826
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-03",
+      "cash": 32380.984921156312,
+      "market_value": 76533.36340978068,
+      "total_value": 108914.34833093699,
+      "total_return": 0.08914348330936991,
+      "positions": {
+        "600519": {
+          "shares": 3800,
+          "market_value": 76533.36340978068,
+          "unrealized_pnl": 1991.3247372536716
+        }
+      }
+    },
+    {
+      "timestamp": "2025-09-04",
+      "cash": 16382.540565729556,
+      "market_value": 86977.72635974013,
+      "total_value": 103360.26692546968,
+      "total_return": 0.033602669254696814,
+      "positions": {
+        "000001": {
+          "shares": 600,
+          "market_value": 9442.771933060923,
+          "unrealized_pnl": -5.347159771992665
+        },
+        "600519": {
+          "shares": 4100,
+          "market_value": 77534.9544266792,
+          "unrealized_pnl": -3541.4270465481095
+        }
+      }
+    }
+  ],
+  "signal_history": [
+    {
+      "date": "2025-08-05",
+      "symbol": "600519",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.6326595538498887,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "date": "2025-08-05",
+      "symbol": "000001",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.8835991578971709,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "date": "2025-08-05",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 16100,
+      "confidence": 0.8194209544917316,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-06",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.6,
+      "reason": "多空因素均衡，建议观望"
+    },
+    {
+      "date": "2025-08-06",
+      "symbol": "000001",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.6,
+      "reason": "多空因素均衡，建议观望"
+    },
+    {
+      "date": "2025-08-06",
+      "symbol": "000002",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.6128223305299492,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "date": "2025-08-07",
+      "symbol": "600519",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.7818085413497299,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "date": "2025-08-07",
+      "symbol": "000001",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.644058436517039,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "date": "2025-08-07",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 15400,
+      "confidence": 0.8688621937802866,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-08",
+      "symbol": "600519",
+      "action": "SELL",
+      "volume": 18500,
+      "confidence": 0.6151484037555225,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-08",
+      "symbol": "000001",
+      "action": "SELL",
+      "volume": 13800,
+      "confidence": 0.6652988981164918,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-08",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.6,
+      "reason": "多空因素均衡，建议观望"
+    },
+    {
+      "date": "2025-08-11",
+      "symbol": "600519",
+      "action": "SELL",
+      "volume": 15400,
+      "confidence": 0.6041505049186047,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-11",
+      "symbol": "000001",
+      "action": "SELL",
+      "volume": 25600,
+      "confidence": 0.6874553187930084,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-11",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 6370,
+      "confidence": 0.5745485568747855,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-12",
+      "symbol": "600519",
+      "action": "SELL",
+      "volume": 14200,
+      "confidence": 0.693850400339106,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-12",
+      "symbol": "000001",
+      "action": "SELL",
+      "volume": 23800,
+      "confidence": 0.7767353110714416,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-12",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 20400,
+      "confidence": 0.7455451054711123,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-13",
+      "symbol": "600519",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.6076087750818574,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "date": "2025-08-13",
+      "symbol": "000001",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.6237960881435629,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "date": "2025-08-13",
+      "symbol": "000002",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.5326037246516615,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "date": "2025-08-14",
+      "symbol": "600519",
+      "action": "SELL",
+      "volume": 18600,
+      "confidence": 0.7141563713261884,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-14",
+      "symbol": "000001",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.8610907795381624,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "date": "2025-08-14",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 23600,
+      "confidence": 0.6815976138727431,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-15",
+      "symbol": "600519",
+      "action": "SELL",
+      "volume": 5800,
+      "confidence": 0.6473874140433737,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-15",
+      "symbol": "000001",
+      "action": "SELL",
+      "volume": 19700,
+      "confidence": 0.7864457799747786,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-15",
+      "symbol": "000002",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.6,
+      "reason": "多空因素均衡，建议观望"
+    },
+    {
+      "date": "2025-08-18",
+      "symbol": "600519",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.5541711075888475,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "date": "2025-08-18",
+      "symbol": "000001",
+      "action": "SELL",
+      "volume": 13600,
+      "confidence": 0.6534895545757616,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-18",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 18400,
+      "confidence": 0.8579385430013148,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-19",
+      "symbol": "600519",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.8910936064319507,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "date": "2025-08-19",
+      "symbol": "000001",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.8497966820720598,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "date": "2025-08-19",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 5390,
+      "confidence": 0.5480686856005542,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-20",
+      "symbol": "600519",
+      "action": "SELL",
+      "volume": 16700,
+      "confidence": 0.8150576024100026,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-20",
+      "symbol": "000001",
+      "action": "SELL",
+      "volume": 4059,
+      "confidence": 0.5264617479590558,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-20",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 13370,
+      "confidence": 0.5332878876765159,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-21",
+      "symbol": "600519",
+      "action": "SELL",
+      "volume": 25400,
+      "confidence": 0.6816380966990789,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-21",
+      "symbol": "000001",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.5304024497561123,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "date": "2025-08-21",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 4760,
+      "confidence": 0.5725377316011979,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-22",
+      "symbol": "600519",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.5630935626649561,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "date": "2025-08-22",
+      "symbol": "000001",
+      "action": "SELL",
+      "volume": 11200,
+      "confidence": 0.8767655090458599,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-22",
+      "symbol": "000002",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.8336509840645348,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "date": "2025-08-25",
+      "symbol": "600519",
+      "action": "SELL",
+      "volume": 10800,
+      "confidence": 0.6909664021040725,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-25",
+      "symbol": "000001",
+      "action": "SELL",
+      "volume": 27800,
+      "confidence": 0.8063121600742013,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-25",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 15800,
+      "confidence": 0.6499433084345827,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-26",
+      "symbol": "600519",
+      "action": "HOLD",
+      "volume": 0,
+      "confidence": 0.6,
+      "reason": "多空因素均衡，建议观望"
+    },
+    {
+      "date": "2025-08-26",
+      "symbol": "000001",
+      "action": "SELL",
+      "volume": 23800,
+      "confidence": 0.6893326013346248,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-26",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 16300,
+      "confidence": 0.601401624713409,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-27",
+      "symbol": "600519",
+      "action": "SELL",
+      "volume": 11480,
+      "confidence": 0.5589825867912579,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-27",
+      "symbol": "000001",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.8968058951753946,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "date": "2025-08-27",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 13790,
+      "confidence": 0.590839884769999,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-08-28",
+      "symbol": "600519",
+      "action": "SELL",
+      "volume": 28200,
+      "confidence": 0.8083006211326252,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-28",
+      "symbol": "000001",
+      "action": "SELL",
+      "volume": 16100,
+      "confidence": 0.7316167190608343,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-28",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 13500,
+      "confidence": 0.7099524454500172,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-08-29",
+      "symbol": "600519",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.6510816704402939,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "date": "2025-08-29",
+      "symbol": "000001",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.5490168407457112,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "date": "2025-08-29",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 29300,
+      "confidence": 0.6946126982509272,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-09-01",
+      "symbol": "600519",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.6879528051862421,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "date": "2025-09-01",
+      "symbol": "000001",
+      "action": "SELL",
+      "volume": 14100,
+      "confidence": 0.6871770687200383,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-09-01",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 26500,
+      "confidence": 0.6897918219648376,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-09-02",
+      "symbol": "600519",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.6620921188085932,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "date": "2025-09-02",
+      "symbol": "000001",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.6675718022451922,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "date": "2025-09-02",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 13100,
+      "confidence": 0.7782776378157721,
+      "reason": "风险较大，建议及时止损"
+    },
+    {
+      "date": "2025-09-03",
+      "symbol": "600519",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.8225363340106605,
+      "reason": "多个维度显示积极信号，建议买入"
+    },
+    {
+      "date": "2025-09-03",
+      "symbol": "000001",
+      "action": "SELL",
+      "volume": 9730,
+      "confidence": 0.5834628400203709,
+      "reason": "存在下行风险，建议减仓"
+    },
+    {
+      "date": "2025-09-03",
+      "symbol": "000002",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.6291622148848445,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "date": "2025-09-04",
+      "symbol": "600519",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.5342178538048326,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "date": "2025-09-04",
+      "symbol": "000001",
+      "action": "BUY",
+      "volume": 1000,
+      "confidence": 0.6114396068422976,
+      "reason": "整体偏多，建议小幅加仓"
+    },
+    {
+      "date": "2025-09-04",
+      "symbol": "000002",
+      "action": "SELL",
+      "volume": 7900,
+      "confidence": 0.6225345933447763,
+      "reason": "存在下行风险，建议减仓"
+    }
+  ],
+  "start_time": "2025-09-04T17:01:28.574478",
+  "end_time": "2025-09-04T17:01:29.132302",
+  "duration_seconds": 0.557824
+}

@@ -1,7 +1,7 @@
 # Core dependencies
 pandas==2.0.3
 numpy==1.24.3
-akshare==1.11.85
+akshare==1.17.44
 tushare==1.3.7
 pydantic==2.5.3
 pyyaml==6.0.1
@@ -15,7 +15,7 @@ matplotlib==3.7.5
 plotly==5.17.0
 
 # LLM and AI
-openai==1.3.9
+openai>=1.6.1,<2.0.0
 langchain==0.1.0
 langchain-openai==0.0.2
 httpx==0.25.2

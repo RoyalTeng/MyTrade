@@ -1,0 +1,211 @@
+# MyTrade Agent配置文件
+# 基于TradingAgents企业级架构的智能体配置
+
+agents:
+  # ===============================================
+  # 分析师层 - Analysts (并行执行)
+  # ===============================================
+  
+  Fundamentals:
+    class: "FundamentalAnalyst"
+    enabled: true
+    priority: 1
+    parallel: true
+    timeout: 30
+    retry: 2
+    config:
+      model: "gpt-3.5-turbo"
+      focus_metrics: ["pe", "pb", "roe", "debt_ratio"]
+      analysis_depth: "standard"
+      
+  Technical:
+    class: "TechnicalAnalyst"
+    enabled: true
+    priority: 1
+    parallel: true
+    timeout: 25
+    retry: 2
+    config:
+      model: "gpt-3.5-turbo"
+      indicators: ["rsi", "macd", "ma", "bollinger"]
+      timeframe: "daily"
+      
+  Sentiment:
+    class: "SentimentAnalyst"
+    enabled: true
+    priority: 1
+    parallel: true
+    timeout: 20
+    retry: 2
+    config:
+      model: "gpt-3.5-turbo"
+      sources: ["news", "social_media", "analyst_reports"]
+      sentiment_window: 7  # days
+      
+  News:
+    class: "NewsAnalyst"
+    enabled: true
+    priority: 1
+    parallel: true
+    timeout: 35
+    retry: 2
+    config:
+      model: "gpt-3.5-turbo"
+      news_sources: ["sina", "163", "eastmoney"]
+      relevance_threshold: 0.7
+      max_news_count: 10
+
+  # ===============================================
+  # 研究员层 - Researchers (辩论机制)
+  # ===============================================
+  
+  Bull:
+    class: "BullResearcher"
+    enabled: true
+    priority: 2
+    parallel: true
+    timeout: 40
+    retry: 1
+    config:
+      model: "gpt-4"  # 使用更强模型进行深度分析
+      stance: "optimistic"
+      focus_strengths: true
+      debate_style: "aggressive"
+      
+  Bear:
+    class: "BearResearcher"
+    enabled: true
+    priority: 2
+    parallel: true
+    timeout: 40
+    retry: 1
+    config:
+      model: "gpt-4"
+      stance: "pessimistic"
+      focus_risks: true
+      debate_style: "conservative"
+
+  # ===============================================
+  # 交易员层 - Trader (策略融合)
+  # ===============================================
+  
+  Trader:
+    class: "QuantTrader"
+    enabled: true
+    priority: 3
+    parallel: false  # 串行执行
+    timeout: 30
+    retry: 1
+    config:
+      model: "gpt-3.5-turbo"
+      strategy_weights:
+        fundamental: 0.3
+        technical: 0.3
+        sentiment: 0.2
+        news: 0.2
+      position_sizing: "kelly"
+      max_position_size: 0.1
+
+  # ===============================================
+  # 风险管理层 - Risk Management (三视角)
+  # ===============================================
+  
+  Risk_Seeking:
+    class: "AggressiveRiskManager"
+    enabled: true
+    priority: 4
+    parallel: true
+    timeout: 20
+    retry: 1
+    config:
+      model: "gpt-3.5-turbo"
+      risk_appetite: "high"
+      max_drawdown: 0.15
+      leverage_tolerance: 2.0
+      
+  Risk_Neutral:
+    class: "NeutralRiskManager"
+    enabled: true
+    priority: 4
+    parallel: true
+    timeout: 20
+    retry: 1
+    config:
+      model: "gpt-3.5-turbo"
+      risk_appetite: "medium"
+      max_drawdown: 0.10
+      leverage_tolerance: 1.5
+      
+  Risk_Conservative:
+    class: "ConservativeRiskManager"
+    enabled: true
+    priority: 4
+    parallel: true
+    timeout: 20
+    retry: 1
+    config:
+      model: "gpt-3.5-turbo"
+      risk_appetite: "low"
+      max_drawdown: 0.05
+      leverage_tolerance: 1.0
+
+  # ===============================================
+  # 管理层 - Portfolio Manager (最终审批)
+  # ===============================================
+  
+  PM:
+    class: "PortfolioManager"
+    enabled: true
+    priority: 5
+    parallel: false  # 串行执行
+    timeout: 25
+    retry: 1
+    config:
+      model: "gpt-4"  # PM使用最强模型
+      approval_threshold: 0.7
+      max_portfolio_risk: 0.08
+      sector_limits:
+        technology: 0.3
+        finance: 0.25
+        healthcare: 0.2
+      
+# ===============================================
+# 辩论配置 - Debate Configuration
+# ===============================================
+
+debate:
+  max_rounds: 3           # 最大辩论轮数
+  min_rounds: 1           # 最小辩论轮数
+  convergence_threshold: 0.1  # 收敛阈值（方差）
+  enable_early_stop: true     # 启用提前收敛
+  
+# ===============================================
+# 执行配置 - Execution Configuration  
+# ===============================================
+
+execution:
+  default_timeout: 30     # 默认超时时间(秒)
+  max_parallel: 4         # 最大并行数
+  retry_delay: 1.0        # 重试延迟(秒)
+  circuit_breaker:        # 熔断配置
+    failure_threshold: 3
+    recovery_timeout: 60
+    
+# ===============================================
+# 模型配置 - LLM Configuration
+# ===============================================
+
+llm:
+  default_model: "gpt-3.5-turbo"
+  fallback_model: "gpt-3.5-turbo"
+  max_tokens: 2000
+  temperature: 0.1
+  budget_tokens: 100000   # 每日Token预算
+  
+  models:
+    gpt-3.5-turbo:
+      cost_per_1k: 0.002
+      max_context: 4096
+    gpt-4:
+      cost_per_1k: 0.03
+      max_context: 8192

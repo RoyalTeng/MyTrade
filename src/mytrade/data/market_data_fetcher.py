@@ -10,7 +10,7 @@ import time
 import logging
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Optional, Dict, Any, Literal
+from typing import Optional, Dict, Any, Literal, Union
 
 import pandas as pd
 import akshare as ak
@@ -22,7 +22,7 @@ class DataSourceConfig(BaseModel):
     """数据源配置"""
     source: Literal["akshare", "tushare"] = "akshare"
     tushare_token: Optional[str] = None
-    cache_dir: Path = Field(default_factory=lambda: Path("./data/cache"))
+    cache_dir: Union[Path, str] = Field(default="./data/cache")
     cache_days: int = 7  # 缓存有效天数
 
 
@@ -37,18 +37,27 @@ class MarketDataFetcher:
     - 提供统一的数据接口和异常处理
     """
 
-    def __init__(self, config: DataSourceConfig):
+    def __init__(self, config):
         """
         初始化数据采集器
         
         Args:
-            config: 数据源配置
+            config: 数据源配置（可以是DataConfig或DataSourceConfig）
         """
         self.config = config
         self.logger = logging.getLogger(self.__class__.__name__)
         
+        # 处理缓存目录，确保是Path对象
+        if hasattr(config, 'cache_dir'):
+            if isinstance(config.cache_dir, str):
+                self.cache_dir = Path(config.cache_dir)
+            else:
+                self.cache_dir = config.cache_dir
+        else:
+            self.cache_dir = Path("./data/cache")
+            
         # 确保缓存目录存在
-        self.config.cache_dir.mkdir(parents=True, exist_ok=True)
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
         
         # 初始化Tushare（如果使用）
         if config.source == "tushare" and config.tushare_token:
@@ -180,7 +189,7 @@ class MarketDataFetcher:
     def _get_cache_file_path(self, symbol: str, freq: str) -> Path:
         """生成缓存文件路径"""
         filename = f"{symbol}_{freq}.csv"
-        return self.config.cache_dir / filename
+        return self.cache_dir / filename
 
     def _is_cache_valid(self, cache_file: Path) -> bool:
         """检查缓存是否有效"""
@@ -334,12 +343,12 @@ class MarketDataFetcher:
             if symbol:
                 # 清理特定股票的缓存
                 pattern = f"{self._normalize_symbol(symbol)}_*.csv"
-                for cache_file in self.config.cache_dir.glob(pattern):
+                for cache_file in self.cache_dir.glob(pattern):
                     cache_file.unlink()
                     self.logger.info(f"Deleted cache file: {cache_file}")
             else:
                 # 清理所有缓存
-                for cache_file in self.config.cache_dir.glob("*.csv"):
+                for cache_file in self.cache_dir.glob("*.csv"):
                     cache_file.unlink()
                     self.logger.info(f"Deleted cache file: {cache_file}")
         except Exception as e:
@@ -347,11 +356,11 @@ class MarketDataFetcher:
 
     def get_cache_info(self) -> Dict[str, Any]:
         """获取缓存信息"""
-        cache_files = list(self.config.cache_dir.glob("*.csv"))
+        cache_files = list(self.cache_dir.glob("*.csv"))
         total_size = sum(f.stat().st_size for f in cache_files)
         
         return {
-            "cache_dir": str(self.config.cache_dir),
+            "cache_dir": str(self.cache_dir),
             "file_count": len(cache_files),
             "total_size_mb": round(total_size / 1024 / 1024, 2),
             "files": [f.name for f in cache_files]
