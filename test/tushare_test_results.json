@@ -1,0 +1,60 @@
+{
+  "timestamp": "2025-09-06 11:07:44",
+  "connection_test": {
+    "success": true,
+    "message": "连接成功，获取到10条交易日历记录"
+  },
+  "index_data": {
+    "上证指数": {
+      "code": "000001.SH",
+      "name": "上证指数",
+      "date": "20250905",
+      "close": 3812.5143,
+      "change_pct": 1.2384,
+      "volume": 626223380.0,
+      "amount": 979061710.2
+    },
+    "深证成指": {
+      "code": "399001.SZ",
+      "name": "深证成指",
+      "date": "20250905",
+      "close": 12590.5616,
+      "change_pct": 3.8936,
+      "volume": 816494225.0,
+      "amount": 1325596804.6
+    },
+    "创业板指": {
+      "code": "399006.SZ",
+      "name": "创业板指",
+      "date": "20250905",
+      "close": 2958.181,
+      "change_pct": 6.5532,
+      "volume": 241521964.0,
+      "amount": 671992144.5
+    }
+  },
+  "stock_data": {
+    "000001.SZ": {
+      "ts_code": "000001.SZ",
+      "date": "20250905",
+      "close": 11.72,
+      "change_pct": -0.1704,
+      "volume": 819661.56
+    },
+    "000002.SZ": {
+      "ts_code": "000002.SZ",
+      "date": "20250905",
+      "close": 6.59,
+      "change_pct": 0.9188,
+      "volume": 1171091.43
+    },
+    "600000.SH": {
+      "ts_code": "600000.SH",
+      "date": "20250905",
+      "close": 13.69,
+      "change_pct": -0.581,
+      "volume": 790386.36
+    }
+  },
+  "data_source": "Tushare Pro"
+}

@@ -11,7 +11,7 @@ data:
 trading_agents:
   model_fast: "gpt-3.5-turbo"
   model_deep: "gpt-4"
-  use_online_data: false
+  use_online_data: true
   debate_rounds: 2
   openai_api_key: "${OPENAI_API_KEY}"  # 从环境变量读取
   

@@ -1,0 +1,62 @@
+{
+  "timestamp": "2025-09-06 11:08:27",
+  "tushare_indices": {
+    "上证指数": {
+      "source": "Tushare",
+      "price": 3812.5143,
+      "change_pct": 1.2384,
+      "date": "20250905"
+    },
+    "深证成指": {
+      "source": "Tushare",
+      "price": 12590.5616,
+      "change_pct": 3.8936,
+      "date": "20250905"
+    },
+    "创业板指": {
+      "source": "Tushare",
+      "price": 2958.181,
+      "change_pct": 6.5532,
+      "date": "20250905"
+    }
+  },
+  "akshare_indices": {
+    "上证指数": {
+      "source": "AKShare",
+      "price": 3812.51,
+      "change_pct": 1.2382232041382124,
+      "date": "2025-09-05"
+    },
+    "深证成指": {
+      "source": "AKShare",
+      "price": 12590.56,
+      "change_pct": 3.893651959368569,
+      "date": "2025-09-05"
+    },
+    "创业板指": {
+      "source": "AKShare",
+      "price": 2958.18,
+      "change_pct": 6.553084196307964,
+      "date": "2025-09-05"
+    },
+    "沪深300": {
+      "source": "AKShare",
+      "price": 4460.32,
+      "change_pct": 2.1788184302702427,
+      "date": "2025-09-05"
+    }
+  },
+  "data_sources_status": {
+    "tushare": {
+      "available": true,
+      "token_configured": true,
+      "description": "Tushare Pro - 专业金融数据接口"
+    },
+    "akshare": {
+      "available": true,
+      "description": "AKShare - 开源金融数据接口"
+    },
+    "last_check": "2025-09-06 11:08:25"
+  },
+  "test_type": "dual_source_comparison"
+}

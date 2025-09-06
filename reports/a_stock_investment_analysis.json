@@ -1,0 +1,102 @@
+{
+  "analysis_date": "2025-09-06 15:07:44",
+  "market_analysis": {
+    "上证指数": {
+      "price": 3812.51,
+      "change": 1.2382232041382124,
+      "performance": "neutral"
+    },
+    "深证成指": {
+      "price": 12590.56,
+      "change": 3.893651959368569,
+      "performance": "good"
+    },
+    "创业板指": {
+      "price": 2958.18,
+      "change": 6.553084196307964,
+      "performance": "strong"
+    },
+    "沪深300": {
+      "price": 4460.32,
+      "change": 2.1788184302702427,
+      "performance": "good"
+    }
+  },
+  "market_sentiment": {
+    "northbound_flow": {
+      "today_flow": 0.0,
+      "recent_trend": "流出"
+    }
+  },
+  "investment_strategy": {
+    "market_view": "成长股市场",
+    "allocation_strategy": "7:2:1分配",
+    "risk_level": "中等偏高",
+    "time_horizon": "6-12个月",
+    "expected_return": "20%",
+    "max_drawdown": "15%"
+  },
+  "recommended_stocks": [
+    {
+      "code": "000858.SZ",
+      "name": "五粮液",
+      "sector": "消费",
+      "reason": "消费龙头，业绩稳定"
+    },
+    {
+      "code": "002415.SZ",
+      "name": "海康威视",
+      "sector": "科技",
+      "reason": "AI视频监控龙头"
+    },
+    {
+      "code": "300059.SZ",
+      "name": "东方财富",
+      "sector": "金融科技",
+      "reason": "互联网金融龙头"
+    },
+    {
+      "code": "000002.SZ",
+      "name": "万科A",
+      "sector": "房地产",
+      "reason": "地产龙头，估值低"
+    },
+    {
+      "code": "600519.SZ",
+      "name": "贵州茅台",
+      "sector": "消费",
+      "reason": "白酒之王，长期价值投资"
+    },
+    {
+      "code": "000001.SZ",
+      "name": "平安银行",
+      "sector": "金融",
+      "reason": "股份制银行龙头"
+    },
+    {
+      "code": "002142.SZ",
+      "name": "宁波银行",
+      "sector": "金融",
+      "reason": "城商行翘楚"
+    },
+    {
+      "code": "300750.SZ",
+      "name": "宁德时代",
+      "sector": "新能源",
+      "reason": "全球动力电池龙头"
+    },
+    {
+      "code": "600036.SH",
+      "name": "招商银行",
+      "sector": "金融",
+      "reason": "银行业龙头"
+    },
+    {
+      "code": "002714.SZ",
+      "name": "牧原股份",
+      "sector": "农业",
+      "reason": "生猪养殖龙头"
+    }
+  ],
+  "total_stocks_analyzed": 5428
+}

@@ -110,3 +110,5 @@ python main.py --symbol 000001.SZ --start 2023-01-01 --end 2023-07-01
 * 格式良好、符合约定的代码（black/flake8/isort）；
 * 支持后期拓展至 Web UI 的模块接口设计。
 - TradingAgents 智能体引擎参考这两个GitHub仓库：1、https://github.com/TauricResearch/TradingAgents.git；2、https://github.com/hsliuping/TradingAgents-CN.git
+- 测试时遇到问题先尝试解决问题，而不是先先规避问题退回创建简化版本的测试脚本，尝试问题不能解决之后才尝试简单脚本
+- 每次运行系统，除非特别强调，都采用真实的数据来源，确保数据的真实性

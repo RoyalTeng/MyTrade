@@ -1,0 +1,63 @@
+{
+  "timestamp": "2025-09-06 11:05:11",
+  "data_sources": {
+    "tushare": true,
+    "akshare": true
+  },
+  "indices": {
+    "上证指数": {
+      "code": "000001",
+      "name": "上证指数",
+      "current_price": 3812.51,
+      "change_pct": 1.2382232041382124,
+      "change_amount": 46.63000000000011,
+      "volume": 626223380.0,
+      "amount": 979061710221.1,
+      "data_source": "AKShare",
+      "update_time": "2025-09-06 11:05:11",
+      "trade_date": "2025-09-05"
+    },
+    "深证成指": {
+      "code": "399001",
+      "name": "深证成指",
+      "current_price": 12590.56,
+      "change_pct": 3.893651959368569,
+      "change_amount": 471.85999999999876,
+      "volume": 816494226.0,
+      "amount": 1325596804626.32,
+      "data_source": "AKShare",
+      "update_time": "2025-09-06 11:05:11",
+      "trade_date": "2025-09-05"
+    },
+    "创业板指": {
+      "code": "399006",
+      "name": "创业板指",
+      "current_price": 2958.18,
+      "change_pct": 6.553084196307964,
+      "change_amount": 181.92999999999984,
+      "volume": 247717272.0,
+      "amount": 676084998434.46,
+      "data_source": "AKShare",
+      "update_time": "2025-09-06 11:05:12",
+      "trade_date": "2025-09-05"
+    },
+    "沪深300": {
+      "code": "000300",
+      "name": "沪深300",
+      "current_price": 4460.32,
+      "change_pct": 2.1788184302702427,
+      "change_amount": 95.10999999999967,
+      "volume": 249625657.0,
+      "amount": 664166970946.5,
+      "data_source": "AKShare",
+      "update_time": "2025-09-06 11:05:12",
+      "trade_date": "2025-09-05"
+    }
+  },
+  "sentiment": {
+    "northbound_flow": {
+      "today_flow": 0.0,
+      "recent_trend": "流出"
+    }
+  }
+}

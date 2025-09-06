@@ -48,7 +48,7 @@ def cli(ctx, config, verbose, debug):
             click.echo(f"配置文件加载成功: {config}")
             
     except Exception as e:
-        click.echo(f"❌ 配置文件加载失败: {e}", err=True)
+        click.echo(f"[ERROR] 配置文件加载失败: {e}", err=True)
         sys.exit(1)
 
 
@@ -66,7 +66,7 @@ def data(ctx):
 @click.pass_context
 def fetch(ctx, symbol, days, force):
     """获取股票历史数据"""
-    click.echo(f"📊 正在获取 {symbol} 最近 {days} 天的数据...")
+    click.echo(f"[DATA] 正在获取 {symbol} 最近 {days} 天的数据...")
     
     try:
         config = ctx.obj['config']
@@ -83,22 +83,22 @@ def fetch(ctx, symbol, days, force):
         )
         
         if not data.empty:
-            click.echo(f"✅ 成功获取 {len(data)} 条记录")
+            click.echo(f"[OK] 成功获取 {len(data)} 条记录")
             click.echo(f"时间范围: {data.index[0]} 到 {data.index[-1]}")
             click.echo(f"最新价格: {data['close'].iloc[-1]:.2f}")
             click.echo(f"期间涨跌幅: {((data['close'].iloc[-1] / data['close'].iloc[0] - 1) * 100):.2f}%")
         else:
-            click.echo("⚠️ 未获取到数据")
+            click.echo("[WARNING] 未获取到数据")
             
     except Exception as e:
-        click.echo(f"❌ 数据获取失败: {e}", err=True)
+        click.echo(f"[ERROR] 数据获取失败: {e}", err=True)
 
 
 @data.command()
 @click.pass_context
 def stocks(ctx):
     """获取股票列表"""
-    click.echo("📈 获取股票列表...")
+    click.echo("[DATA] 获取股票列表...")
     
     try:
         config = ctx.obj['config']
@@ -107,15 +107,15 @@ def stocks(ctx):
         stock_list = fetcher.get_stock_list()
         
         if not stock_list.empty:
-            click.echo(f"✅ 获取到 {len(stock_list)} 只股票")
+            click.echo(f"[OK] 获取到 {len(stock_list)} 只股票")
             click.echo("\n前10只股票:")
             for _, row in stock_list.head(10).iterrows():
                 click.echo(f"  {row.get('code', 'N/A')}: {row.get('name', 'N/A')}")
         else:
-            click.echo("⚠️ 未获取到股票列表")
+            click.echo("[WARNING] 未获取到股票列表")
             
     except Exception as e:
-        click.echo(f"❌ 获取股票列表失败: {e}", err=True)
+        click.echo(f"[ERROR] 获取股票列表失败: {e}", err=True)
 
 
 @cli.group()
@@ -132,7 +132,7 @@ def signal(ctx):
 @click.pass_context
 def generate(ctx, symbol, date, lookback):
     """为指定股票生成交易信号"""
-    click.echo(f"🧠 正在为 {symbol} 生成交易信号...")
+    click.echo(f"[SIGNAL] 正在为 {symbol} 生成交易信号...")
     
     try:
         config = ctx.obj['config']
@@ -171,7 +171,7 @@ def generate(ctx, symbol, date, lookback):
                     click.echo(f"   结论: {analysis['conclusion']}")
                     
     except Exception as e:
-        click.echo(f"❌ 信号生成失败: {e}", err=True)
+        click.echo(f"[ERROR] 信号生成失败: {e}", err=True)
 
 
 @signal.command()
@@ -181,7 +181,7 @@ def generate(ctx, symbol, date, lookback):
 def batch(ctx, symbols, date):
     """批量生成交易信号"""
     symbol_list = list(symbols)
-    click.echo(f"🔍 批量生成信号，股票数量: {len(symbol_list)}")
+    click.echo(f"[BATCH] 批量生成信号，股票数量: {len(symbol_list)}")
     
     try:
         config = ctx.obj['config']
@@ -201,7 +201,7 @@ def batch(ctx, symbols, date):
             click.echo(f"{symbol:<10} {signal.action:<6} {signal.volume:<8} {signal.confidence:<8.2f} {signal.reason[:20]}")
             
     except Exception as e:
-        click.echo(f"❌ 批量信号生成失败: {e}", err=True)
+        click.echo(f"[ERROR] 批量信号生成失败: {e}", err=True)
 
 
 @cli.group()
@@ -225,7 +225,7 @@ def run(ctx, start_date, end_date, symbols, initial_cash, max_positions, positio
     """运行回测"""
     symbol_list = [s.strip() for s in symbols.split(',')]
     
-    click.echo("🚀 开始运行回测...")
+    click.echo("[BACKTEST] 开始运行回测...")
     click.echo(f"时间范围: {start_date} 到 {end_date}")
     click.echo(f"股票池: {symbol_list}")
     click.echo(f"初始资金: ¥{initial_cash:,.2f}")
@@ -275,11 +275,11 @@ def run(ctx, start_date, end_date, symbols, initial_cash, max_positions, positio
             if 'win_rate' in metrics:
                 click.echo(f"胜率: {metrics['win_rate']:.2%}")
         
-        click.echo(f"\n✅ 回测完成，运行时间: {result.duration_seconds:.1f}秒")
+        click.echo(f"\n[OK] 回测完成，运行时间: {result.duration_seconds:.1f}秒")
         click.echo(f"结果已保存到: logs/backtest/")
         
     except Exception as e:
-        click.echo(f"❌ 回测失败: {e}", err=True)
+        click.echo(f"[ERROR] 回测失败: {e}", err=True)
 
 
 @cli.group()
@@ -293,23 +293,23 @@ def system(ctx):
 @click.pass_context
 def health(ctx):
     """系统健康检查"""
-    click.echo("🏥 正在进行系统健康检查...")
+    click.echo("[HEALTH] 正在进行系统健康检查...")
     
     try:
         config = ctx.obj['config']
         
         # 检查信号生成器
-        click.echo("\n📊 检查信号生成器...")
+        click.echo("\n[CHECK] 检查信号生成器...")
         generator = SignalGenerator(config)
         health_status = generator.health_check()
         
         overall_status = health_status.get('status', 'unknown')
-        click.echo(f"整体状态: {'✅' if overall_status == 'healthy' else '⚠️'} {overall_status}")
+        click.echo(f"整体状态: {overall_status}")
         
         components = health_status.get('components', {})
         for component, status in components.items():
             component_status = status.get('status', 'unknown')
-            icon = '✅' if component_status == 'healthy' else '❌'
+            icon = '[OK]' if component_status == 'healthy' else '[ERROR]'
             click.echo(f"  {component}: {icon} {component_status}")
             
             if 'error' in status:
@@ -321,20 +321,20 @@ def health(ctx):
                     click.echo(f"    {key}: {value}")
         
         # 检查配置
-        click.echo(f"\n⚙️ 配置状态: ✅ 已加载")
+        click.echo(f"\n[CONFIG] 配置状态: 已加载")
         click.echo(f"  数据源: {config.data.source}")
         click.echo(f"  缓存目录: {config.data.cache_dir}")
         click.echo(f"  日志目录: {config.logging.dir}")
         
     except Exception as e:
-        click.echo(f"❌ 健康检查失败: {e}", err=True)
+        click.echo(f"[ERROR] 健康检查失败: {e}", err=True)
 
 
 @system.command()
 @click.pass_context
 def info(ctx):
     """显示系统信息"""
-    click.echo("ℹ️ 系统信息")
+    click.echo("[INFO] 系统信息")
     click.echo("=" * 50)
     
     # 版本信息
@@ -356,35 +356,116 @@ def info(ctx):
 
 
 @cli.command()
+@click.pass_context
+def interactive(ctx):
+    """启动交互式界面"""
+    click.echo("[INTERACTIVE] 欢迎使用MyTrade交互式界面")
+    click.echo("=" * 50)
+    click.echo("可用命令：")
+    click.echo("  1. demo [symbol]     - 运行完整演示")
+    click.echo("  2. signal [symbol]   - 生成交易信号")
+    click.echo("  3. data [symbol]     - 获取股票数据")
+    click.echo("  4. info              - 系统信息")
+    click.echo("  5. help              - 显示帮助")
+    click.echo("  6. exit              - 退出程序")
+    click.echo("=" * 50)
+    
+    try:
+        while True:
+            try:
+                user_input = input("\nMyTrade> ").strip()
+                
+                if not user_input:
+                    continue
+                    
+                parts = user_input.split()
+                command = parts[0].lower()
+                
+                if command == 'exit' or command == 'quit':
+                    click.echo("[INFO] 感谢使用MyTrade系统！")
+                    break
+                    
+                elif command == 'help':
+                    click.echo("\n=== 命令帮助 ===")
+                    click.echo("demo [symbol]     - 运行完整演示流程")
+                    click.echo("signal [symbol]   - 生成智能交易信号") 
+                    click.echo("data [symbol]     - 获取股票历史数据")
+                    click.echo("info              - 显示系统信息")
+                    click.echo("help              - 显示此帮助信息")
+                    click.echo("exit              - 退出交互界面")
+                    
+                elif command == 'demo':
+                    symbol = parts[1] if len(parts) > 1 else '000001'
+                    click.echo(f"\n[DEMO] 运行演示流程，股票: {symbol}")
+                    ctx.invoke(demo, symbol=symbol)
+                    
+                elif command == 'signal':
+                    symbol = parts[1] if len(parts) > 1 else '000001'
+                    click.echo(f"\n[SIGNAL] 生成交易信号，股票: {symbol}")
+                    from click.testing import CliRunner
+                    runner = CliRunner()
+                    result = runner.invoke(cli, ['signal', 'generate', symbol])
+                    click.echo(result.output)
+                    
+                elif command == 'data':
+                    symbol = parts[1] if len(parts) > 1 else '000001'
+                    days = parts[2] if len(parts) > 2 else '30'
+                    click.echo(f"\n[DATA] 获取股票数据，股票: {symbol}，天数: {days}")
+                    from click.testing import CliRunner
+                    runner = CliRunner()
+                    result = runner.invoke(cli, ['data', 'fetch', symbol, '--days', days])
+                    click.echo(result.output)
+                    
+                elif command == 'info':
+                    click.echo("\n[INFO] 系统信息")
+                    ctx.invoke(info)
+                    
+                else:
+                    click.echo(f"[ERROR] 未知命令: {command}")
+                    click.echo("输入 'help' 查看可用命令")
+                    
+            except KeyboardInterrupt:
+                click.echo("\n[INFO] 按 Ctrl+C 再次退出，或输入 'exit' 退出")
+            except EOFError:
+                click.echo("\n[INFO] 感谢使用MyTrade系统！")
+                break
+            except Exception as e:
+                click.echo(f"[ERROR] 执行命令时出错: {e}")
+                
+    except KeyboardInterrupt:
+        click.echo("\n[INFO] 感谢使用MyTrade系统！")
+
+
+@cli.command()
 @click.option('--symbol', default='600519', help='测试股票代码')
 @click.pass_context
 def demo(ctx, symbol):
     """运行完整演示流程"""
-    click.echo("🎬 开始演示完整交易流程...")
+    click.echo("[DEMO] 开始演示完整交易流程...")
     click.echo(f"演示股票: {symbol}")
     
     try:
         config = ctx.obj['config']
         
         # 1. 获取数据
-        click.echo("\n1️⃣ 获取市场数据...")
+        click.echo("\n[STEP 1] 获取市场数据...")
         fetcher = MarketDataFetcher(config.data)
         end_date = datetime.now().strftime('%Y-%m-%d')
         start_date = (datetime.now() - timedelta(days=30)).strftime('%Y-%m-%d')
         
         data = fetcher.fetch_history(symbol, start_date, end_date)
-        click.echo(f"✅ 获取到 {len(data)} 条历史数据")
+        click.echo(f"[OK] 获取到 {len(data)} 条历史数据")
         
         # 2. 生成信号
-        click.echo("\n2️⃣ 生成交易信号...")
+        click.echo("\n[STEP 2] 生成交易信号...")
         generator = SignalGenerator(config)
         report = generator.generate_signal(symbol)
         
         signal = report.signal
-        click.echo(f"✅ 信号生成完成: {signal.action} (置信度: {signal.confidence:.2f})")
+        click.echo(f"[OK] 信号生成完成: {signal.action} (置信度: {signal.confidence:.2f})")
         
         # 3. 模拟交易
-        click.echo("\n3️⃣ 模拟交易执行...")
+        click.echo("\n[STEP 3] 模拟交易执行...")
         portfolio = PortfolioManager(initial_cash=100000)
         
         if signal.action == "BUY" and signal.volume > 0:
@@ -396,21 +477,21 @@ def demo(ctx, symbol):
                 reason=signal.reason
             )
             if success:
-                click.echo(f"✅ 买入成功: {signal.volume} 股")
+                click.echo(f"[OK] 买入成功: {signal.volume} 股")
             else:
-                click.echo("❌ 买入失败")
+                click.echo("[ERROR] 买入失败")
         
         # 4. 显示结果
-        click.echo("\n4️⃣ 交易结果...")
+        click.echo("\n[STEP 4] 交易结果...")
         summary = portfolio.get_portfolio_summary()
         click.echo(f"账户余额: ¥{summary['current_cash']:,.2f}")
         click.echo(f"持仓市值: ¥{summary['market_value']:,.2f}")
         click.echo(f"总资产: ¥{summary['total_value']:,.2f}")
         
-        click.echo("\n🎉 演示完成!")
+        click.echo("\n[SUCCESS] 演示完成!")
         
     except Exception as e:
-        click.echo(f"❌ 演示失败: {e}", err=True)
+        click.echo(f"[ERROR] 演示失败: {e}", err=True)
 
 
 if __name__ == '__main__':
